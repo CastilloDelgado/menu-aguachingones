@@ -1,3 +1,9 @@
+<script setup>
+import Layout from './components/Layout.vue';
+</script>
+
 <template>
-  <h1>Aguachingones</h1>
+  <Layout>
+    <p>Hello World</p>
+  </Layout>
 </template>
