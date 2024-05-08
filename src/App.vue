@@ -4,6 +4,6 @@ import Layout from './components/Layout.vue';
 
 <template>
   <Layout>
-    <p>Hello World</p>
+    <Menu />
   </Layout>
 </template>
