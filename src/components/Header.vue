@@ -15,6 +15,6 @@ import logo from "../assets/shrimp-logo.png"
 
 <style>
 .header-title {
-    font-weight: 500;
+    font-weight: bold;
 }
 </style>
