@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Gandhi-Sans";
+  src: url("./assets/fonts/Gandhi/GandhiSans-Regular.otf"),
+    url("./assets/fonts/Gandhi/GandhiSans-Bold.otf"),
+    url("./assets/fonts/Gandhi/GandhiSans-Italic.otf"),
+    url("./assets/fonts/Gandhi/GandhiSans-BoldItalic.otf"), ;
+}
