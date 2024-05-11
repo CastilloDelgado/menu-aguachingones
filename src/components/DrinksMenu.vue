@@ -1,11 +1,10 @@
 <script setup>
 import MenuContainer from './MenuContainer.vue';
-
 </script>
 
 <template>
     <MenuContainer>
-        <p class="uppercase text-center text-2xl font-bold text-primary-600 mb-4">Comidas</p>
+        <p class="uppercase text-center text-2xl font-bold text-primary-600 mb-4">Bebidas</p>
 
         <div v-for="element in [0, 1, 2, 3, 4, 5]" class="flex w-full justify-around mb-2">
             <div class="w-4/6">
