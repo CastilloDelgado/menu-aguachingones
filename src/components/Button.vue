@@ -14,5 +14,3 @@ defineProps({
         {{ title }}
     </div>
 </template>
-
--10px_10px_0px_-4px_#FFFFFF_,_-10px_10px_0px_0px_#e72138
