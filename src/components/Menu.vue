@@ -1,10 +1,13 @@
 <script setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import Button from './Button.vue';
 import MealsMenu from './MealsMenu.vue';
 import DrinksMenu from './DrinksMenu.vue';
+import MENU from '../constants'
 
 const option = ref('meals')
+
+const menu = ref({ ...MENU })
 
 </script>
 
@@ -15,7 +18,7 @@ const option = ref('meals')
             <Button title="Bebidas" :active="option === 'drinks'" @click="option = 'drinks'" />
         </div>
         <div class="w-full">
-            <MealsMenu v-if="option === 'meals'" />
+            <MealsMenu v-if="option === 'meals'" :meals="menu.meals" />
             <DrinksMenu v-if="option === 'drinks'" />
         </div>
     </div>
