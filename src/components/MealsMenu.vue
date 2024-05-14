@@ -11,11 +11,14 @@ defineProps({
         <p class="uppercase text-center text-2xl font-bold text-primary-600 mb-4">{{ meal.title }}</p>
 
         <!-- Elements -->
-        <div v-for="element in meal.elements" class="flex flex-col w-full justify-around mb-2 px-4">
+        <div v-for="element in meal.elements" class="flex flex-col w-full justify-around px-4" :class="{
+        'mb-2': element.description
+    }">
             <div class="flex">
                 <div class="w-4/6">
                     <p class="text-medium font-bold text-primary-700 uppercase">{{ element.title }}</p>
-                    <p class="text-xs text-justify text-primary-950">{{ element.description }}</p>
+                    <p class="text-xs text-justify text-primary-950" v-if="element.description">{{ element.description
+                        }}</p>
                 </div>
                 <div class="w-2/6 flex text-sm justify-end gap-2 text-primary-600 font-bold" v-if="element.price">
 

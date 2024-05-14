@@ -255,33 +255,34 @@ const MENU = {
   ],
   drinks: [
     {
-      title: "Entradas",
+      title: "Cerveza",
       elements: [
-        {
-          title: "Nombre",
-          description: "Descripción",
-          price: 128.5,
-        },
+        { title: "Corona", price: 35 },
+        { title: "Pacífico", price: 35 },
+        { title: "Strongbow", price: 40 },
+        { title: "Carta blanca", price: 25 },
+        { title: "Bohemia", price: 45 },
+        { title: "Modelo especial", price: 45 },
+        { title: "Negra Modelo", price: 45 },
+        { title: "Minerva Lager", price: 75 },
+        { title: "Cayaco", price: 75 },
+        { title: "Piedra lisa", price: 75 },
+        { title: "Cayaco", price: 75 },
       ],
     },
     {
-      title: "Aguachiles",
+      title: "Preparados",
       elements: [
-        {
-          title: "Nombre",
-          description: "Descripción",
-          price: 128.5,
-        },
+        { title: "Michelada", price: 65 },
+        { title: "Clamato preparado", price: 35 },
       ],
     },
     {
-      title: "Postres",
+      title: "Sin alcohol",
       elements: [
-        {
-          title: "Nombre",
-          description: "Descripción",
-          price: 128.5,
-        },
+        { title: "Agua fresca", price: 25 },
+        { title: "Refresco", price: 25 },
+        { title: "Agua mineral", price: 25 },
       ],
     },
   ],

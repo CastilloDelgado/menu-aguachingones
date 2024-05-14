@@ -3,13 +3,15 @@ import Header from './Header.vue';
 import Footer from "./Footer.vue";
 </script>
 <template>
-    <div class="max-w-3xl mx-auto border-neutral-200">
+    <div>
         <Header />
+        <div class="max-w-xl mx-auto border-neutral-200 bg-transparent">
 
-        <div class="min-h-[100vh] bg-repeat bg-center bg-image">
-            <slot />
+            <div class="min-h-[100vh] ">
+                <slot />
+            </div>
+
         </div>
-
         <Footer />
     </div>
 </template>
@@ -17,6 +19,6 @@ import Footer from "./Footer.vue";
 <style scoped>
 .bg-image {
     background-image: url('../assets/pattern.png');
-    background-size: 40px 40px;
+    background-size: 10px 10px;
 }
 </style>

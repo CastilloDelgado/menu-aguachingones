@@ -19,7 +19,7 @@ const menu = ref({ ...MENU })
         </div>
         <div class="w-full">
             <MealsMenu v-if="option === 'meals'" :meals="menu.meals" />
-            <DrinksMenu v-if="option === 'drinks'" />
+            <MealsMenu v-if="option === 'drinks'" :meals="menu.drinks" />
         </div>
     </div>
 </template>
