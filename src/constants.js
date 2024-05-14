@@ -17,9 +17,89 @@ const MENU = {
         },
         {
           title: "Tostadita",
+          description: "Servida con cebolla morada, aguacate y salsitas negras",
+          price: null,
+          variants: [
+            {
+              title: "Atún fresco",
+              description: "",
+              price: 65,
+            },
+            {
+              title: "Camarón cocido",
+              description: "",
+              price: 55,
+            },
+            {
+              title: "Ceviche",
+              description: "",
+              price: 45,
+            },
+          ],
+        },
+        {
+          title: "Papas doradas",
+          description: "Preparadas con tu salsa favorita de la casa.",
+          price: 40,
+        },
+        {
+          title: "Hueva",
           description:
-            "Con jitomate, cebolla y cilantro picaditos, servido con totopos",
-          price: 105,
+            "Orden servida con aguacate y totopos, pa’ disfrutar agusto.",
+          price: null,
+          variants: [
+            {
+              title: "Orden",
+              description: "",
+              price: 85,
+            },
+            {
+              title: "Tostada",
+              description: "",
+              price: 25,
+            },
+          ],
+        },
+        {
+          title: "Ceviche",
+          description:
+            "Mezcla de jitomate, cebolla, cilantro, pepino, zanahoria, preparado con salsas y pescado ó camarón.",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 165,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 115,
+            },
+          ],
+        },
+        {
+          title: "Coctél",
+          description:
+            "Algo suave pa’ sobrevivir el fin de semana. Con su verdurita y todo",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 155,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 105,
+            },
+          ],
+        },
+        {
+          title: "Tacos gobernador",
+          description: "Taquitos de camarón con queso, servidos en orden de 3.",
+          price: 120,
         },
       ],
     },
@@ -27,19 +107,148 @@ const MENU = {
       title: "Aguachiles",
       elements: [
         {
-          title: "Nombre",
-          description: "Descripción",
-          price: 128.5,
+          title: "El chévere",
+          description:
+            "Explosión de frutas tropicalonas (fresa, mango y piña) con chilito de árbol, dulzón, picosito y delicioso.",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 180,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 120,
+            },
+          ],
         },
-      ],
-    },
-    {
-      title: "Postres",
-      elements: [
         {
-          title: "Nombre",
-          description: "Descripción",
-          price: 128.5,
+          title: "El chillón",
+          description:
+            "Preparado con chile de semillas del mismísimo Chile Chillón.",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 180,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 120,
+            },
+          ],
+        },
+        {
+          title: "El toreado",
+          description:
+            "Tomate verde y mezcla de chiles toreados al comal, muy chido",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 165,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 105,
+            },
+          ],
+        },
+        {
+          title: "El ingrato",
+          description:
+            "Naranjita con un poco de habanero tatemado y un chingo de sabor.",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 165,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 105,
+            },
+          ],
+        },
+        {
+          title: "El bravo",
+          description:
+            "Aguachilito rojo con chile de árbol, especias y untoque perrón.",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 165,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 105,
+            },
+          ],
+        },
+        {
+          title: "El chingón",
+          description:
+            "Deliciosa mezcla de chilito serrano y habanero, bien chingón.",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 165,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 105,
+            },
+          ],
+        },
+        {
+          title: "El prieto",
+          description:
+            "Preparado con salsita negra de la casa, chipotle y chingos de amor",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 165,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 105,
+            },
+          ],
+        },
+        {
+          title: "El valiente",
+          description:
+            "Exclusivo para valientes. Preparado BIEN picoso con salsita de habanero de la casa.",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 165,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 105,
+            },
+          ],
         },
       ],
     },

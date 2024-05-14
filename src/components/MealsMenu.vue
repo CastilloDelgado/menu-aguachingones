@@ -7,19 +7,32 @@ defineProps({
 </script>
 
 <template>
-    <MenuContainer>
-        <div v-for="meal in meals">
-            <p class="uppercase text-center text-2xl font-bold text-primary-600 mb-4">{{ meal.title }}</p>
+    <MenuContainer v-for="meal in meals" class="mb-4">
+        <p class="uppercase text-center text-2xl font-bold text-primary-600 mb-4">{{ meal.title }}</p>
 
-            <div v-for="element in meal.elements" class="flex w-full justify-around mb-2">
+        <!-- Elements -->
+        <div v-for="element in meal.elements" class="flex flex-col w-full justify-around mb-2 px-4">
+            <div class="flex">
                 <div class="w-4/6">
                     <p class="text-medium font-bold text-primary-700 uppercase">{{ element.title }}</p>
                     <p class="text-xs text-justify text-primary-950">{{ element.description }}</p>
                 </div>
-                <div class="flex text-sm justify-end gap-2 text-primary-600 font-bold">
-                    <p>
-                        ${{ element.price.toFixed(2) }}
-                    </p>
+                <div class="w-2/6 flex text-sm justify-end gap-2 text-primary-600 font-bold" v-if="element.price">
+
+                    ${{ element.price.toFixed(2) }}
+                </div>
+            </div>
+            <div class="mt-2">
+                <!-- Variants -->
+                <div v-for="variant in element.variants" class="w-full flex">
+                    <div class="w-4/6">
+                        <p class="text-xs font-bold text-primary-700 uppercase">{{ variant.title }}</p>
+                    </div>
+                    <div class="w-2/6 flex text-sm justify-end gap-2 text-primary-600 font-bold">
+                        <span v-if="variant.price">
+                            ${{ variant.price.toFixed(2) }}
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
