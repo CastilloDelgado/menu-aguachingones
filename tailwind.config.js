@@ -7,6 +7,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Gandhi-Sans", ...defaultTheme.fontFamily.sans],
+        serif: ["Gandhi-Serif", ...defaultTheme.fontFamily.sans],
+        title: ["Gilroy", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {

@@ -14,13 +14,13 @@ defineProps({
         <div v-for="element in meal.elements" class="flex flex-col w-full justify-around px-4" :class="{
         'mb-2': element.description
     }">
-            <div class="flex">
-                <div class="w-4/6">
+            <div class="flex justify-between">
+                <div class="w-6/8 pr-1">
                     <p class="text-medium font-bold text-primary-700 uppercase">{{ element.title }}</p>
-                    <p class="text-xs text-justify text-primary-950" v-if="element.description">{{ element.description
+                    <p class="text-sm text-justify text-primary-950" v-if="element.description">{{ element.description
                         }}</p>
                 </div>
-                <div class="w-2/6 flex text-sm justify-end gap-2 text-primary-600 font-bold" v-if="element.price">
+                <div class="w-2/8 flex text-sm justify-end gap-2 text-primary-600  font-thin" v-if="element.price">
 
                     ${{ element.price.toFixed(2) }}
                 </div>
