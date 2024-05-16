@@ -4,7 +4,7 @@ import logo from "../assets/shrimp-logo.png"
 
 <template>
     <div id="header" class="p-2 flex justify-center bg-primary-600 gap-2">
-        <img :src="logo" alt="" class="w-10 h-10">
+        <img :src="logo" alt="" class="w-10 h-10 shake">
         <div class="h-10 grid place-content-center">
             <p class="text-white text-xl uppercase header-title font-title">
                 los aguachingones
@@ -16,5 +16,22 @@ import logo from "../assets/shrimp-logo.png"
 <style>
 .header-title {
     font-weight: bold;
+}
+
+.shake {
+    animation: shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: rotate(360deg);
+}
+
+@keyframes shake {
+
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+
 }
 </style>
