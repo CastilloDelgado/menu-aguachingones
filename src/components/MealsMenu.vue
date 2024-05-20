@@ -19,7 +19,7 @@ defineProps({
             <div class="flex justify-between">
                 <div class="w-6/8 md:pr-8">
                     <p class="text-primary-700 uppercase text-lg">{{ element.title }}</p>
-                    <p class="text-justify text-sm md:font-medium text-primary-950" v-if="element.description">{{
+                    <p class="text-justify text-sm md:text-base text-primary-950" v-if="element.description">{{
         element.description
     }}</p>
                 </div>
