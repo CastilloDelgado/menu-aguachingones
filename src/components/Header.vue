@@ -1,5 +1,5 @@
 <script setup>
-
+import logo from "../assets/shrimp-logo.png"
 </script>
 
 <template>
@@ -9,7 +9,7 @@
                 los aguachingones
             </p>
         </div>
-
+        <img :src="logo" alt="" class="w-10 h-10 shake">
     </div>
 </template>
 
