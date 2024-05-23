@@ -18,7 +18,7 @@ defineProps({
     }">
             <div class="flex justify-between">
                 <div class="w-6/8 md:pr-8">
-                    <p class="text-primary-700 uppercase text-lg">{{ element.title }}</p>
+                    <p class="text-primary-700 font-bold uppercase text-xl">{{ element.title }}</p>
                     <p class="text-justify text-sm md:text-base text-primary-950" v-if="element.description">{{
         element.description
     }}</p>
@@ -33,9 +33,9 @@ defineProps({
                 <!-- Variants -->
                 <div v-for="variant in element.variants" class="w-full flex">
                     <div class="w-4/6">
-                        <p class="font-bold text-primary-700 uppercase">{{ variant.title }}</p>
+                        <p class="text-primary-700 uppercase">{{ variant.title }}</p>
                     </div>
-                    <div class="w-2/6 flex text-medium md:text-lg justify-end gap-2 text-primary-600 font-bold">
+                    <div class="w-2/6 flex text-medium md:text-lg justify-end gap-2 text-primary-600 font-thin">
                         <span v-if="variant.price">
                             ${{ variant.price.toFixed(2) }}
                         </span>
