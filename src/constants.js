@@ -1,7 +1,7 @@
 const MENU = {
   meals: [
     {
-      title: "Entradas",
+      title: "Antojitos",
       elements: [
         {
           title: "Papas Carajas",
@@ -28,7 +28,7 @@ const MENU = {
             {
               title: "Camarón cocido",
               description: "",
-              price: 55,
+              price: 65,
             },
             {
               title: "Ceviche",
@@ -61,20 +61,38 @@ const MENU = {
           ],
         },
         {
-          title: "Ceviche",
+          title: "Ceviche de Camarón",
           description:
-            "Mezcla de jitomate, cebolla, cilantro, pepino, zanahoria, preparado con salsas y pescado ó camarón.",
+            "Mezcla de jitomate, cebolla, cilantro, pepino, zanahoria, preparado con salsas y camarón.",
           price: null,
           variants: [
             {
               title: "Grande",
               description: "",
-              price: 165,
+              price: 169,
             },
             {
               title: "Chico",
               description: "",
-              price: 115,
+              price: 119,
+            },
+          ],
+        },
+        {
+          title: "Ceviche de Pescado",
+          description:
+            "Mezcla de jitomate, cebolla, cilantro, pepino, zanahoria, preparado con salsas y pescado.",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 159,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 109,
             },
           ],
         },
@@ -87,7 +105,7 @@ const MENU = {
             {
               title: "Grande",
               description: "",
-              price: 155,
+              price: 165,
             },
             {
               title: "Chico",
@@ -115,12 +133,12 @@ const MENU = {
             {
               title: "Grande",
               description: "",
-              price: 180,
+              price: 189,
             },
             {
               title: "Chico",
               description: "",
-              price: 120,
+              price: 129,
             },
           ],
         },
@@ -133,12 +151,12 @@ const MENU = {
             {
               title: "Grande",
               description: "",
-              price: 180,
+              price: 189,
             },
             {
               title: "Chico",
               description: "",
-              price: 120,
+              price: 129,
             },
           ],
         },
@@ -205,12 +223,12 @@ const MENU = {
             {
               title: "Grande",
               description: "",
-              price: 165,
+              price: 169,
             },
             {
               title: "Chico",
               description: "",
-              price: 105,
+              price: 109,
             },
           ],
         },
@@ -223,12 +241,12 @@ const MENU = {
             {
               title: "Grande",
               description: "",
-              price: 165,
+              price: 169,
             },
             {
               title: "Chico",
               description: "",
-              price: 105,
+              price: 109,
             },
           ],
         },
@@ -241,12 +259,30 @@ const MENU = {
             {
               title: "Grande",
               description: "",
-              price: 165,
+              price: 169,
             },
             {
               title: "Chico",
               description: "",
-              price: 105,
+              price: 109,
+            },
+          ],
+        },
+        {
+          title: "El vaquero",
+          description:
+            "Camarón a elegir (curtido con limón ó cocido), cecina de la casa, pepino, cebolla y aguacate, con salsa negra de chile serrano.",
+          price: null,
+          variants: [
+            {
+              title: "Grande",
+              description: "",
+              price: 169,
+            },
+            {
+              title: "Chico",
+              description: "",
+              price: 109,
             },
           ],
         },
